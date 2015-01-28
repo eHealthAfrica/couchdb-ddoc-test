@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "./node_modules/.bin/jshint lib/*.js && node test/test.js"
   },
   "keywords": [
     "couchdb",
@@ -15,5 +15,8 @@
     "test"
   ],
   "author": "Jan Lehnardt <jan@apache.org>",
-  "license": "Apache 2.0 License"
+  "license": "Apache 2.0 License",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  }
 }
