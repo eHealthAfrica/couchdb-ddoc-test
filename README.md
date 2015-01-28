@@ -16,7 +16,11 @@ assert.equals(result, fixture);
 
 ### `require()`
 
-CouchDB supports `require()` within design doc functions. It works slightly different from `require()` in e.g. Node.js (in which these tests are run). Instead of relying on CouchDB’s `require()` we will be using a couchapp specific pre-processing directive. To make everything work, we have to jump through a small hoop:
+CouchDB supports `require()` within design doc functions. It works slightly
+different from `require()` in e.g. Node.js (in which these tests are run).
+Instead of relying on CouchDB’s `require()` we will be using a couchapp
+specific pre-processing directive. To make everything work, we have to
+jump through a small hoop:
 
 Say you want to `var foo = require('foo');` within a map function. Do this:
 
