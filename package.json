@@ -2,7 +2,7 @@
   "name": "couchdb-test",
   "version": "1.0.0",
   "description": "CouchDB Design Doc Testing Tool",
-  "main": "lib/couchapp-test.js",
+  "main": "lib/couchdb-test.js",
   "directories": {
     "test": "test"
   },
