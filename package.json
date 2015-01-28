@@ -1,0 +1,19 @@
+{
+  "name": "couchapp-test",
+  "version": "1.0.0",
+  "description": "Couchapp Testing Tool",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "couchdb",
+    "couchapp",
+    "test"
+  ],
+  "author": "Jan Lehnardt <jan@apache.org>",
+  "license": "Apache 2.0 License"
+}
