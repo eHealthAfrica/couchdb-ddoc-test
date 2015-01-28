@@ -2,12 +2,12 @@
   "name": "couchapp-test",
   "version": "1.0.0",
   "description": "Couchapp Testing Tool",
-  "main": "index.js",
+  "main": "lib/couchapp-test.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "node test/test.js"
   },
   "keywords": [
     "couchdb",
