@@ -1,14 +1,22 @@
 {
-  "name": "couchdb-test",
+  "name": "couchdb-ddoc-test",
   "version": "1.0.0",
   "description": "CouchDB Design Doc Testing Tool",
-  "main": "lib/couchdb-test.js",
+  "main": "lib/couchdb-ddoc-test.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "./node_modules/.bin/jshint lib/*.js && node test/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eHealthAfrica/couchdb-ddoc-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eHealthAfrica/couchdb-ddoc-test/issues"
+  },
+  "homepage": "https://github.com/eHealthAfrica/couchdb-ddoc-test#readme",
   "keywords": [
     "couchdb",
     "design doc",

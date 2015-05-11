@@ -1,5 +1,5 @@
 var assert = require('assert');
-var CouchDBTest = require('../lib/couchdb-test');
+var CouchDBTest = require('../lib/couchdb-ddoc-test');
 var test = new CouchDBTest({
   fixture: {a: 1},
   src: 'test/fixtures/map.js'

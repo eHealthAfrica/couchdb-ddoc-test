@@ -3,7 +3,7 @@ This is a simple CouchDB design doc testing tool.
 Usage:
 
 ```javascript
-var CouchDBTest = require('couchdb-test');
+var CouchDBTest = require('couchdb-ddoc-test');
 var test = new CouchappTest({
   fixture: {a: 1},
   src: 'path/to/map.js'
@@ -39,7 +39,7 @@ function(doc) {
   // the `foo` variable. If it doesn’t exist, we run a regular Node.js `require()`.
   // With *one* caveat: since `map.js` will be run within `eval()` in another module
   // than your tests, we need to put the full module path into `require()`, otherwise,
-  // the foo package would have to be a dependency of the couchdb-test package, which
+  // the foo package would have to be a dependency of the couchdb-ddoc-test package, which
   // wouldn’t work out. Anyhoo!
   var foo = foo || require(process.cwd() + '/different/path/to/foo'
 }
