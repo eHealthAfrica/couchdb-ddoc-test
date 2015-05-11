@@ -1,6 +1,6 @@
 var assert = require('assert');
-var CouchDBTest = require('../lib/couchdb-ddoc-test');
-var test = new CouchDBTest({
+var DDocTest = require('../lib/couchdb-ddoc-test');
+var test = new DDocTest({
   fixture: {a: 1},
   src: 'test/fixtures/map.js'
 });
@@ -14,7 +14,7 @@ assert.deepEqual(result, [{
 
 // should bail if fixture is missing
 try {
-  var test2 = new CouchDBTest({
+  var test2 = new DDocTest({
     src: 'test/fixture/mapjs'
   });
   assert(false); // should not happen
@@ -24,7 +24,7 @@ try {
 
 // should bail if src is missing
 try {
-  var test2 = new CouchDBTest({
+  var test2 = new DDocTest({
     fixture: { a: 1}
   });
   assert(false); // should not happen

@@ -3,8 +3,8 @@ This is a simple CouchDB design doc testing tool.
 Usage:
 
 ```javascript
-var CouchDBTest = require('couchdb-ddoc-test');
-var test = new CouchappTest({
+var DDocTest = require('couchdb-ddoc-test');
+var test = new DDocTest({
   fixture: {a: 1},
   src: 'path/to/map.js'
 });
