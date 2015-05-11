@@ -41,7 +41,7 @@ function(doc) {
   // than your tests, we need to put the full module path into `require()`, otherwise,
   // the foo package would have to be a dependency of the couchdb-test package, which
   // wouldn’t work out. Anyhoo!
-  var foo = foo || require(process.cwd() + '/node_modules/foo'
+  var foo = foo || require(process.cwd() + '/different/path/to/foo'
 }
 ```
 
