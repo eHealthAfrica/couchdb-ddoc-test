@@ -11,6 +11,21 @@ assert.deepEqual(result, [{
   value: {a: 1}
 }]);
 
+// filter test
+var test = new DDocTest({
+  fixture: {a: 1},
+  src: 'test/fixtures/filter.js'
+});
+var result = test.runFilter();
+assert.equal(result, true);
+
+// filter test passing request
+var test = new DDocTest({
+  fixture: {a: 1},
+  src: 'test/fixtures/filter_with_request.js'
+});
+var result = test.runFilter({ param: "param"});
+assert.equal(result, true);
 
 // should bail if fixture is missing
 try {

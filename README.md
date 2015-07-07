@@ -14,6 +14,17 @@ assert.equals(result, fixture);
 
 ```
 
+### available test functions
+
+ CouchDB function                                                                               | available test functions
+----------------------------------------------------------------------------------------------  | -----------------------
+[mapfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#map-functions)(doc)              | `runMap()`  *see note* *
+[filterfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#filter-functions)(doc, req)   | `runFilter(req)` *see note* *
+[listfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#list-functions)(head, req)      | `runList(head, req)`
+
+* the missing `doc` param is obtained from the provided **fixture** and passed internally to the tested function.
+
+
 ### `require()`
 
 CouchDB supports `require()` within design doc functions. It works slightly
