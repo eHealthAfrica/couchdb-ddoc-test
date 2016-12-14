@@ -19,6 +19,14 @@ var test = new DDocTest({
 var result = test.runFilter();
 assert.equal(result, true);
 
+// update test
+var update = new DDocTest({
+  fixture: {a: 1},
+  src: 'test/fixtures/update.js'
+});
+var result = update.runUpdate();
+assert.deepEqual(result, [{ a: 1 }, 'Updated']);
+
 // filter test passing request
 var test = new DDocTest({
   fixture: {a: 1},

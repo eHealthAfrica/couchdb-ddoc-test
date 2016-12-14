@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/eHealthAfrica/couchdb-ddoc-test.svg?branch=master)](https://travis-ci.org/eHealthAfrica/couchdb-ddoc-test)
+
 This is a simple CouchDB design doc testing tool.
 
 Usage:
@@ -21,6 +23,7 @@ assert.equals(result, fixture);
 [mapfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#map-functions)(doc)              | `runMap()`  *see note* *
 [filterfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#filter-functions)(doc, req)   | `runFilter(req)` *see note* *
 [listfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#list-functions)(head, req)      | `runList(head, req)`
+[updatefun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#update-functions)(doc, req)      | `runUpdate(head, req)`
 
 * the missing `doc` param is obtained from the provided **fixture** and passed internally to the tested function.
 
