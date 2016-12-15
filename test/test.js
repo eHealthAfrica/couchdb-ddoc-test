@@ -38,12 +38,18 @@ assert.equal(result, true);
 // should bail if fixture is missing
 try {
   var test2 = new DDocTest({
-    src: 'test/fixture/mapjs'
+    src: 'test/fixtures/mapjs'
   });
   assert(false); // should not happen
 } catch(e) {
   assert.equal(e.message, 'missing options.fixture argument');
 }
+
+var test2 = new DDocTest({
+  fixture: null,
+  src: 'test/fixtures/update.js'
+});
+assert(true); // should pass
 
 // should bail if src is missing
 try {

@@ -16,6 +16,8 @@ assert.equals(result, fixture);
 
 ```
 
+fixture can have `null` value.
+
 ### available test functions
 
  CouchDB function                                                                               | available test functions
@@ -23,7 +25,7 @@ assert.equals(result, fixture);
 [mapfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#map-functions)(doc)              | `runMap()`  *see note* *
 [filterfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#filter-functions)(doc, req)   | `runFilter(req)` *see note* *
 [listfun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#list-functions)(head, req)      | `runList(head, req)`
-[updatefun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#update-functions)(doc, req)      | `runUpdate(head, req)`
+[updatefun](http://docs.couchdb.org/en/latest/couchapp/ddocs.html#update-functions)(doc, req)      | `runUpdate(doc, req)`
 
 * the missing `doc` param is obtained from the provided **fixture** and passed internally to the tested function.
 
